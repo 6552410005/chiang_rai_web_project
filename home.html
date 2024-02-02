@@ -1,0 +1,760 @@
+<!-- /*
+* Template Name: Tour
+* Template Author: Untree.co
+* Tempalte URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="author"
+      content="กรรชัย สิงห์โคต, กรรรชัย, Kanchai Singkhot, Kanchai, 6552410005"
+    />
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <meta name="description" content="เว็บไซต์รวมสถานที่ท่องเที่ยว" />
+    <meta
+      name="keywords"
+      content="เที่ยว, ท่องเที่ยว, จังหวัด, เชียงราย, เที่ยวไทย"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+    <link rel="stylesheet" href="css/daterangepicker.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>เที่ยว ไหน</title>
+  </head>
+
+  <body>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+          <span class="icofont-close js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <nav class="site-nav">
+      <div class="container">
+        <div class="site-navigation">
+          <a href="home.html" class="logo m-0"
+            >เที่ยว <span class="text-primary">.ไหน</span></a
+          >
+
+          <ul
+            class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right"
+          >
+            <li class="active"><a href="home.html">หน้าแรก</a></li>
+            <li><a href="register.html">ลงทะเบียน</a></li>
+            <li><a href="services.html">บริการ</a></li>
+            <li><a href="about.html">เกี่ยวกับ</a></li>
+            <li><a href="contact.html">ติดต่อเรา</a></li>
+          </ul>
+
+          <a
+            href="#"
+            class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
+            data-toggle="collapse"
+            data-target="#main-navbar"
+          >
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <div class="intro-wrap">
+              <h1 class="mb-5">
+                <span class="d-block">สนุกไปกับการเที่ยว</span> ของคุณที่
+                <span class="typed-words"></span>
+              </h1>
+              <div class="row">
+                <div class="col-12">
+                  <form class="form">
+                    <div class="row mb-2">
+                      <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+                        <select
+                          style="text-align: center"
+                          name=""
+                          id="selc-province"
+                          class="form-control custom-select"
+                        >
+                          <option value="cri">เชียงราย</option>
+                          <option disabled>จังหวัดอื่นเร็วๆนี้</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-5">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="daterange"
+                        />
+                      </div>
+                      <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-3">
+                        <input
+                          style="text-align: center"
+                          type="text"
+                          class="form-control"
+                          placeholder="จำนวนคน"
+                        />
+                      </div>
+                    </div>
+                    <div class="row align-items-center">
+                      <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+                        <input
+                          type="button"
+                          id="btn-search"
+                          class="btn btn-primary btn-block"
+                          value="ค้นหา"
+                        />
+                      </div>
+                      <div class="col-lg-8">
+                        <label class="control control--checkbox mt-3">
+                          <span class="caption">บันทึกการค้นหา</span>
+                          <input type="checkbox" checked="checked" />
+                          <div class="control__indicator"></div>
+                        </label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="slides">
+              <img
+                src="images/hero-slider-1.jpg"
+                alt="Image"
+                class="img-fluid active"
+              />
+              <img
+                src="images/hero-slider-2.jpg"
+                alt="Image"
+                class="img-fluid"
+              />
+              <img
+                src="images/hero-slider-3.jpg"
+                alt="Image"
+                class="img-fluid"
+              />
+              <img
+                src="images/hero-slider-4.jpg"
+                alt="Image"
+                class="img-fluid"
+              />
+              <img
+                src="images/hero-slider-5.jpg"
+                alt="Image"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="untree_co-section">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2 class="section-title text-center mb-3">บริการของเรา</h2>
+            <p>อยากเที่ยวไหนค้นหาเลย <a href="home.html">เที่ยวไหน.com</a></p>
+          </div>
+        </div>
+        <div class="row align-items-stretch">
+          <div class="col-lg-4 order-lg-1">
+            <div class="h-100">
+              <div class="frame h-100">
+                <div
+                  class="feature-img-bg h-100"
+                  style="background-image: url('https://cdn.pixabay.com/photo/2014/02/08/07/42/beach-261574_1280.jpg')"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-1"
+          >
+            <div class="feature-1 d-md-flex">
+              <div class="align-self-center">
+                <span class="flaticon-house display-4 text-primary"></span>
+                <h3>ที่พัก</h3>
+                <p class="mb-0">พบกับที่พักที่เราจัดหาให้ ถูกใจแน่นอน!</p>
+              </div>
+            </div>
+
+            <div class="feature-1">
+              <div class="align-self-center">
+                <span class="flaticon-restaurant display-4 text-primary"></span>
+                <h3>ร้านอาหารและคาเฟ่</h3>
+                <p class="mb-0">เพลิดเพลินกับอาหารและถ่ายรูปลงโซเชียล</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-3"
+          >
+            <div class="feature-1 d-md-flex">
+              <div class="align-self-center">
+                <span class="flaticon-mail display-4 text-primary"></span>
+                <h3>ติดต่อง่ายเอกสารเร็ว</h3>
+                <p class="mb-0">ไม่มีการล่าช้าของการติดต่อและเอกสารกับเรา</p>
+              </div>
+            </div>
+
+            <div class="feature-1 d-md-flex">
+              <div class="align-self-center">
+                <span class="flaticon-phone-call display-4 text-primary"></span>
+                <h3>24/7 พร้อมช่วยเหลือ</h3>
+                <p class="mb-0">พร้อมช่วยเหลือคุณตลอด 24 ชั่วโมง</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="untree_co-section count-numbers py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+            <div class="counter-wrap">
+              <div class="counter">
+                <span class="" data-number="9313">0</span>
+              </div>
+              <span class="caption"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สถานที่</span
+              >
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+            <div class="counter-wrap">
+              <div class="counter">
+                <span class="" data-number="8492">0</span>
+              </div>
+              <span class="caption"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เที่ยวกับเรา</span
+              >
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+            <div class="counter-wrap">
+              <div class="counter">
+                <span class="" data-number="112">0</span>
+              </div>
+              <span class="caption">&nbsp;&nbsp;&nbsp;พนักงาน</span>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+            <div class="counter-wrap">
+              <div class="counter">
+                <span class="" data-number="77">0</span>
+              </div>
+              <span class="caption">&nbsp;จังหวัด</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="untree_co-section">
+      <div class="container">
+        <div class="row text-center justify-content-center mb-5">
+          <div class="col-lg-7">
+            <h2 class="section-title text-center">สถานที่ท่องเที่ยวยอดนิยม</h2>
+            <p>เที่ยวสนุกไปด้วยกัน</p>
+          </div>
+        </div>
+
+        <div class="owl-carousel owl-3-slider">
+          <div class="item">
+            <a
+              class="media-thumb"
+              href="https://shorturl.at/ehX69"
+              data-fancybox="gallery"
+            >
+              <div class="media-text">
+                <h3>วัดพระศรีรัตนศาสดาราม</h3>
+                <span class="location">กรุงเทพฯ</span>
+              </div>
+              <img
+                src="https://shorturl.at/ehX69"
+                alt="Image"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+
+          <div class="item">
+            <a
+              class="media-thumb"
+              href="https://shorturl.at/xKN36"
+              data-fancybox="gallery"
+            >
+              <div class="media-text">
+                <h3>ปราสาทสัจธรรม</h3>
+                <span class="location">ชลบุรี</span>
+              </div>
+              <img
+                src="https://shorturl.at/xKN36"
+                alt="Image"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+
+          <div class="item">
+            <a
+              class="media-thumb"
+              href="https://shorturl.at/cdnRW"
+              data-fancybox="gallery"
+            >
+              <div class="media-text">
+                <h3>อุทยานแห่งชาติเขาใหญ่</h3>
+                <span class="location">สระบุรี</span>
+              </div>
+              <img
+                src="https://shorturl.at/cdnRW"
+                alt="Image"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+
+          <div class="item">
+            <a
+              class="media-thumb"
+              href="https://shorturl.at/qBKQ1"
+              data-fancybox="gallery"
+            >
+              <div class="media-text">
+                <h3>วัดพระธาตุดอยสุเทพราชวรวิหาร</h3>
+                <span class="location">เชียงใหม่</span>
+              </div>
+              <img
+                src="https://shorturl.at/qBKQ1"
+                alt="Image"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+
+          <div class="item">
+            <a
+              class="media-thumb"
+              href="https://shorturl.at/fltvB"
+              data-fancybox="gallery"
+            >
+              <div class="media-text">
+                <h3>อุทยานประวัติศาสตร์สุโขทัย</h3>
+                <span class="location">สุโขทัย </span>
+              </div>
+              <img
+                src="https://shorturl.at/fltvB"
+                alt="Image"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+
+          <div class="item">
+            <a
+              class="media-thumb"
+              href="https://rb.gy/3rq7o"
+              data-fancybox="gallery"
+            >
+              <div class="media-text">
+                <h3>วัดร่องขุ่น</h3>
+                <span class="location">เชียงราย</span>
+              </div>
+              <img src="https://rb.gy/3rq7o" alt="Image" class="img-fluid" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="untree_co-section">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-6">
+            <h2 class="section-title text-center mb-3">
+              ข้อเสนอพิเศษ &amp; ส่วนลด
+            </h2>
+            <p>
+              เราต้องการให้คุณพบกับที่พักและอาหารในราคาที่ถูกใจ
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+            <div class="media-1">
+              <a href="https://www.thenakaphuket.com/" class="d-block mb-3" target=”_blank”
+                ><img
+                  src="https://s.isanook.com/tr/0/ud/278/1394673/2.jpg"
+                  alt="The Naka Phuket, The Naka, Naka"
+                  class="img-fluid"
+              /></a>
+              <span class="d-flex align-items-center loc mb-2">
+                <span class="icon-room mr-3"></span>
+                <span>ภูเก็ต</span>
+              </span>
+              <div class="d-flex align-items-center">
+                <div>
+                  <h3><a href="#">The Naka Phuket</a></h3>
+                  <div class="price ml-auto">
+                    <span>฿9,774.-</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+            <div class="media-1">
+              <a href="https://www.casadelaflora.com/" class="d-block mb-3" target="_blank"
+                ><img
+                  src="https://s.isanook.com/tr/0/ud/278/1394673/7.jpg"
+                  alt="Casa de La Flora"
+                  class="img-fluid"
+              /></a>
+              <span class="d-flex align-items-center loc mb-2">
+                <span class="icon-room mr-3"></span>
+                <span>พังงา</span>
+              </span>
+              <div class="d-flex align-items-center">
+                <div>
+                  <h3><a href="#">Casa de La Flora</a></h3>
+                  <div class="price ml-auto">
+                    <span>฿6,999.-</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+            <div class="media-1">
+              <a href="https://www.silavadeeresort.com/" class="d-block mb-3" target="_blank"
+                ><img
+                  src="https://s.isanook.com/tr/0/ud/278/1394673/15.jpg"
+                  alt="silavadeeresort"
+                  class="img-fluid"
+              /></a>
+              <span class="d-flex align-items-center loc mb-2">
+                <span class="icon-room mr-3"></span>
+                <span>สมุย</span>
+              </span>
+              <div class="d-flex align-items-center">
+                <div>
+                  <h3><a href="#">Silavadee Pool Spa Resort</a></h3>
+                  <div class="price ml-auto">
+                    <span>฿5,500.-</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+            <div class="media-1">
+              <a href="https://www.temataglamping.com/" class="d-block mb-3" target="_blank"
+                ><img
+                  src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/356452107.jpg?k=dd1c3facbcc3b821a55e8828eb7977c3f11a8872c30f0371eed9f60c1b3b2abc&o=&hp=1"
+                  alt="temataglamping, ที่พักเขาใหญ่"
+                  class="img-fluid"
+              /></a>
+
+              <span class="d-flex align-items-center loc mb-2">
+                <span class="icon-room mr-3"></span>
+                <span>เชียงราย</span>
+              </span>
+
+              <div class="d-flex align-items-center">
+                <div>
+                  <h3><a href="#">Te Mata Glamping</a></h3>
+                  <div class="price ml-auto">
+                    <span>฿5,990.-</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-5 cta-section">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h2 class="mb-2 text-white">
+              ให้คุณได้เที่ยวที่ดีที่สุด มาเป็นส่วนหนึ่งกับเรา
+            </h2>
+            <p class="mb-4 lead text-white text-white-opacity">
+              พร้อมเที่ยว กิน พัก กับเราหรือยัง?
+            </p>
+            <p class="mb-0">
+              <a
+                href="register.html"
+                class="btn btn-outline-white text-white btn-md font-weight-bold"
+                >ไปกันเลย</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-footer">
+      <div class="inner first">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="widget">
+                <h3 class="heading"><a href="about.html">เกี่ยวกับ เที่ยวไหน.com</a></h3>
+                <p>
+                  Far far away, behind the word mountains, far from the
+                  countries Vokalia and Consonantia, there live the blind texts.
+                </p>
+              </div>
+              <div class="widget">
+                <ul class="list-unstyled social">
+                  <li>
+                    <a href="#"><span class="icon-twitter"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon-instagram"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon-facebook"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon-linkedin"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon-dribbble"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon-pinterest"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon-apple"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon-google"></span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-2 pl-lg-5">
+              <div class="widget">
+                <h3 class="heading">Pages</h3>
+                <ul class="links list-unstyled">
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-2">
+              <div class="widget">
+                <h3 class="heading">Resources</h3>
+                <ul class="links list-unstyled">
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="widget">
+                <h3 class="heading">Contact</h3>
+                <ul class="list-unstyled quick-info links">
+                  <li class="email"><a href="#">mail@example.com</a></li>
+                  <li class="phone"><a href="#">+1 222 212 3819</a></li>
+                  <li class="address">
+                    <a href="#">43 Raymouth Rd. Baltemoer, London 3910</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="inner dark">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-8 mb-3 mb-md-0 mx-auto">
+              <p>
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                . All Rights Reserved. &mdash; Designed with love by
+                <a href="https://untree.co" class="link-highlight">Untree.co</a>
+                <!-- License information: https://untree.co/license/ -->Distributed
+                By
+                <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
+
+    <script src="js/typed.js"></script>
+    <script>
+      $(function () {
+        var slides = $(".slides"),
+          images = slides.find("img");
+
+        images.each(function (i) {
+          $(this).attr("data-id", i + 1);
+        });
+
+        var typed = new Typed(".typed-words", {
+          strings: [
+            "กรุงเทพฯ",
+            "สมุทรปราการ",
+            "นนทบุรี",
+            "ปทุมธานี",
+            "อยุธยา",
+            "อ่างทอง",
+            "ลพบุรี",
+            "สิงห์บุรี",
+            "ชัยนาท",
+            "สระบุรี",
+            "ชลบุรี",
+            "ระยอง",
+            "จันทบุรี",
+            "ตราด",
+            "ฉะเชิงเทรา",
+            "ปราจีนบุรี",
+            "นครนายก",
+            "สระแก้ว",
+            "นครราชสีมา",
+            "บุรีรัมย์",
+            "สุรินทร์",
+            "ศรีสะเกษ",
+            "อุบลราชธานี",
+            "ยโสธร",
+            "ชัยภูมิ",
+            "อำนาจเจริญ",
+            "บึงกาฬ",
+            "หนองบัวลำภู",
+            "ขอนแก่น",
+            "อุดรธานี",
+            "เลย",
+            "หนองคาย",
+            "มหาสารคาม",
+            "ร้อยเอ็ด",
+            "กาฬสินธุ์",
+            "สกลนคร",
+            "นครพนม",
+            "มุกดาหลวง",
+            "เชียงราย",
+            "เชียงใหม่",
+            "น่าน",
+            "พะเยา",
+            "เชียงราย",
+            "แพร่",
+            "แม่ฮ่องสอน",
+            "ลำปาง",
+            "ลำพูน",
+            "อุตรดิตถ์",
+            "แพร่",
+            "นครสวรรค์",
+            "อุทัยธานี",
+            "กำแพงเพชร",
+            "ตาก",
+            "สุโขทัย",
+            "พิษณุโลก",
+            "พิจิตร",
+            "เพชรบูรณ์",
+            "ราชบุรี",
+            "กาญจนบุรี",
+            "สุพรรณบุรี",
+            "นครปฐม",
+            "สมุทรสาคร",
+            "สมุทรสงคราม",
+            "เพชรบุรี",
+            "ประจวบคีรีขันธ์",
+            "นครศรีธรรมราช",
+            "กระบี่",
+            "พังงา",
+            "ภูเก็ต",
+            "สุราษฎร์ธานี",
+            "ระนอง",
+            "ชุมพร",
+            "สงขลา",
+            "สตูล",
+            "ตรัง",
+            "พัทลุง",
+            "ปัตตานี",
+            "ยะลา",
+            "นราธิวาส",
+          ],
+          typeSpeed: 80,
+          backSpeed: 80,
+          backDelay: 4000,
+          startDelay: 1000,
+          loop: true,
+          showCursor: true,
+          preStringTyped: (arrayPos, self) => {
+            arrayPos++;
+            console.log(arrayPos);
+            $(".slides img").removeClass("active");
+            $('.slides img[data-id="' + arrayPos + '"]').addClass("active");
+          },
+        });
+      });
+    </script>
+
+    <script src="js/custom.js"></script>
+    <script src="js/script01.js"></script>
+  </body>
+</html>
